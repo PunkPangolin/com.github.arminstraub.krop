@@ -7,8 +7,8 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ad/41/18390c417052b46ad6d7d2ede9581798d5eac8a40388d5604e6ae7862928/PyMuPDF-1.23.25-cp311-none-manylinux2014_x86_64.whl",
-            "sha256": "067c88b4e6609cb7e74d98d0b0a35c11eb8e29f4fc51dc7ed1dd448b81d347c7",
+            "url": "https://files.pythonhosted.org/packages/23/67/1eefac0bc228c80c58456a6bfc04310874e7c0aa0ede73c7ea3a829cad42/PyMuPDF-1.23.26-cp311-none-manylinux2014_x86_64.whl",
+            "sha256": "f25aafd3e7fb9d7761a22acf2b67d704f04cc36d4dc33a3773f0eb3f4ec3606f",
             "only-arches": [
                 "x86_64"
             ]
