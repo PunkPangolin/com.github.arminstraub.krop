@@ -7,16 +7,16 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/23/67/1eefac0bc228c80c58456a6bfc04310874e7c0aa0ede73c7ea3a829cad42/PyMuPDF-1.23.26-cp311-none-manylinux2014_x86_64.whl",
-            "sha256": "f25aafd3e7fb9d7761a22acf2b67d704f04cc36d4dc33a3773f0eb3f4ec3606f",
+            "url": "https://files.pythonhosted.org/packages/e3/2e/0aba7dc24be72efe6930bd5ae03ed243f3966bb3847480f6e5a6c24d6fbe/PyMuPDF-1.24.0-cp311-none-manylinux2014_x86_64.whl",
+            "sha256": "8db27eca7f6aa2c5aa84278cc9961a0183e8aca6d7210a5648658816ea9601bf",
             "only-arches": [
                 "x86_64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/65/33/4a3732db87ca2ea72ad6b3496f921b25d040f4ac853da1932d8cceb5cc33/PyMuPDFb-1.23.22-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-            "sha256": "3ffa713ad18e816e584c8a5f569995c32d22f8ac76ab6e4a61f2d2983c4b73d9",
+            "url": "https://files.pythonhosted.org/packages/57/c4/c0bc463b75edcec7845d3e65f62cf517705022c22d517d19842e851a97b9/PyMuPDFb-1.24.0-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "sha256": "871e100637fd64c76356656ca4122f4d355906aa25173997959ccaf39413c8d4",
             "only-arches": [
                 "x86_64"
             ]
