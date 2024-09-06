@@ -7,32 +7,32 @@
     "sources": [
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/ca/f7/26b0441bc8b0636f557c925d84795fdb7e069458700b0982328c6f96a111/PyMuPDF-1.24.2-cp311-none-manylinux2014_aarch64.whl",
-            "sha256": "d6a4d4ad8cc698db25a31026311f03fd351c2db9bfd41d898494cd0baff3b679",
+            "url": "https://files.pythonhosted.org/packages/1c/77/78800d3a711f92060f8e338a5df9330ffb5950f4fb3beeba01e15c03c4c6/PyMuPDF-1.24.10-cp311-none-manylinux2014_aarch64.whl",
+            "sha256": "1a87440a6cbc0d5ad513425baa0f4747841898fca6e37350ca3e6b29e5f40c01",
             "only-arches": [
                 "aarch64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/46/56/273bc6c5ba2f30975f1ce24319f136e8ce124c2a6f325975f4cd987d142c/PyMuPDF-1.24.2-cp311-none-manylinux2014_x86_64.whl",
-            "sha256": "7b5acb936203bdaef5945f211af8a5fb40f07059be1ba69a728425f6d522e60f",
+            "url": "https://files.pythonhosted.org/packages/c5/39/3aaa1e8822c55c71bb37911b5b1c3157ef38d731581224b29a682d80a17b/PyMuPDF-1.24.10-cp311-none-manylinux2014_x86_64.whl",
+            "sha256": "c0d1ccdc062ea9961063790831e838bc43fcf9a8436a8b9f55898addf97c0f86",
             "only-arches": [
                 "x86_64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/3a/57/75aaeb94d1b00ff3a2aee14deff6eb0ac7da082b75b4504749b4677909d1/PyMuPDFb-1.24.1-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
-            "sha256": "490f7fff4dbe362bc895cefdfc5030d712311d024d357a1388d64816eb215d34",
+            "url": "https://files.pythonhosted.org/packages/62/97/67b5da2edd034e66dadd0ec530e277afb14fe866a3b3b01d9fad154bc6f8/PyMuPDFb-1.24.10-py3-none-manylinux2014_aarch64.manylinux_2_17_aarch64.whl",
+            "sha256": "4f50a7472f9bb10cbc7a1cd589ee4626ca030b8a4a02749f9a29eb6f00c0e0db",
             "only-arches": [
                 "aarch64"
             ]
         },
         {
             "type": "file",
-            "url": "https://files.pythonhosted.org/packages/b2/ac/c5560c6cfbb251df1a884d18ea945c6173ee5b501914877574f365cb9c34/PyMuPDFb-1.24.1-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
-            "sha256": "0fbcc0d2a9ce79fa38eb4e8bb5c959b582f7a49938874e9f61d1a6f5eeb1e4b8",
+            "url": "https://files.pythonhosted.org/packages/62/b9/ad3f076e86328880797fe7e98c43b2879df56cf6cb75ac3058da06d6e6cb/PyMuPDFb-1.24.10-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+            "sha256": "409f1270ef2e70d845e80149ff3db9cfed578274042316cba55cc3e3882421ea",
             "only-arches": [
                 "x86_64"
             ]
