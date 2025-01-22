@@ -1,9 +1,7 @@
 app-id: com.github.arminstraub.krop
-
 runtime: org.kde.Platform
 runtime-version: '6.8'
 sdk: org.kde.Sdk
-
 base: com.riverbankcomputing.PyQt.BaseApp
 base-version: '6.8'
 cleanup-commands:
@@ -11,25 +9,21 @@ cleanup-commands:
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
-
 rename-desktop-file: com.arminstraub.krop.desktop
 rename-appdata-file: com.arminstraub.krop.metainfo.xml
 rename-icon: com.arminstraub.krop
-
 command: krop
-
 finish-args:
   - --share=ipc
   - --socket=fallback-x11
   - --socket=wayland
   # Without dri Qt prints "libEGL warning: wayland-egl: could not open /dev/dri/card0"
   - --device=dri
+cleanup:
+  - /share/man
 
 modules:
-  - name: PyQtApp
-
   - python3-pymupdf.json
-
   - name: krop
     buildsystem: simple
     build-commands:
@@ -38,6 +32,3 @@ modules:
       - type: git
         url: https://github.com/PunkPangolin/krop.git
         commit: 4823e5e955f2e36f16d5557326907502c9ee19f1
-
-cleanup:
-  - /share/man
