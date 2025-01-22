@@ -14,6 +14,7 @@ build-options:
 
 rename-desktop-file: com.arminstraub.krop.desktop
 rename-appdata-file: com.arminstraub.krop.metainfo.xml
+rename-icon: com.arminstraub.krop
 
 command: krop
 
@@ -32,18 +33,11 @@ modules:
   - name: krop
     buildsystem: simple
     build-commands:
-      - desktop-file-edit --set-key="Icon" --set-value="com.github.arminstraub.krop" com.arminstraub.krop.desktop
       - pip3 install --prefix=${FLATPAK_DEST} .
-    post-install:
-      - install -Dm644 krop.svg /app/share/icons/hicolor/scalable/apps/com.github.arminstraub.krop.svg
     sources:
-      - type: file
-        url: https://upload.wikimedia.org/wikipedia/commons/8/89/Gnome-edit-cut.svg
-        sha256: 4e334a6d26a7f374eca85f7d9ebcf29fb09a7fd6fb564b9445cb97b28ec402eb
-        dest-filename: krop.svg
       - type: git
         url: https://github.com/PunkPangolin/krop.git
-        commit: 35252fd389d9bcd1fb617d18b5e2ced248e129c5
+        commit: 4823e5e955f2e36f16d5557326907502c9ee19f1
 
 cleanup:
   - /share/man
