@@ -1,4 +1,3 @@
----
 app-id: com.github.arminstraub.krop
 
 runtime: org.kde.Platform
@@ -12,6 +11,9 @@ cleanup-commands:
 build-options:
   env:
     - BASEAPP_REMOVE_WEBENGINE=1
+
+rename-desktop-file: com.arminstraub.krop.desktop
+rename-appdata-file: com.arminstraub.krop.metainfo.xml
 
 command: krop
 
@@ -30,24 +32,18 @@ modules:
   - name: krop
     buildsystem: simple
     build-commands:
-      - install -Dm644 krop.svg /app/share/icons/hicolor/scalable/apps/com.github.arminstraub.krop.svg
+      - desktop-file-edit --set-key="Icon" --set-value="com.github.arminstraub.krop" com.arminstraub.krop.desktop
       - pip3 install --prefix=${FLATPAK_DEST} .
     post-install:
-      - cp krop.desktop com.github.arminstraub.krop.desktop
-      - desktop-file-edit --set-key="Icon" --set-value="com.github.arminstraub.krop" com.github.arminstraub.krop.desktop
-      - desktop-file-edit --remove-category=KDE com.github.arminstraub.krop.desktop
-      - desktop-file-install --delete-original --dir=/app/share/applications com.github.arminstraub.krop.desktop
-      - install -Dm644 -t /app/share/metainfo com.github.arminstraub.krop.metainfo.xml
+      - install -Dm644 krop.svg /app/share/icons/hicolor/scalable/apps/com.github.arminstraub.krop.svg
     sources:
-      - type: archive
-        url: https://github.com/PunkPangolin/krop/archive/refs/tags/qt6-1.tar.gz
-        sha256: 6ca9c602492051b2fc8d89ce570766ee29829272d36b23d5a2a307cd8895d2a7
       - type: file
         url: https://upload.wikimedia.org/wikipedia/commons/8/89/Gnome-edit-cut.svg
         sha256: 4e334a6d26a7f374eca85f7d9ebcf29fb09a7fd6fb564b9445cb97b28ec402eb
         dest-filename: krop.svg
-      - type: file
-        path: com.github.arminstraub.krop.metainfo.xml
+      - type: git
+        url: https://github.com/PunkPangolin/krop.git
+        commit: 35252fd389d9bcd1fb617d18b5e2ced248e129c5
 
 cleanup:
   - /share/man
