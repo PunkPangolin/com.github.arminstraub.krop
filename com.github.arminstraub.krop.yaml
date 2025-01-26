@@ -30,5 +30,5 @@ modules:
       - pip3 install --prefix=${FLATPAK_DEST} .
     sources:
       - type: git
-        url: https://github.com/PunkPangolin/krop.git
-        commit: 4823e5e955f2e36f16d5557326907502c9ee19f1
+        url: https://github.com/arminstraub/krop.git
+        commit: 44a922ddf77d63582a943adb28bc6ab191e4d8db
