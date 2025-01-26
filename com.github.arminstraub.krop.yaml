@@ -23,7 +23,25 @@ cleanup:
   - /share/man
 
 modules:
+  - name: ghostscript
+    config-opts:
+      - --disable-cups
+      - --disable-dbus
+      - --disable-gtk
+    cleanup:
+      - /share/ghostscript/*/doc/
+      - /share/ghostscript/*/examples
+    sources:
+      - type: git
+        url: https://github.com/ArtifexSoftware/ghostpdl.git
+        tag: ghostpdl-10.04.0
+        commit: df8f4966577fff70320be2eb33cb55eb15d05d52
+        # x-checker-data:
+        #   type: git
+        #   tag-pattern: ^(ghostpdl-[\d.]+)$
+
   - python3-pymupdf.json
+
   - name: krop
     buildsystem: simple
     build-commands:
